@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INEC</title>
+        <link rel="stylesheet"  href="header.css">
+        <link rel="stylesheet" href="calendar.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo"> 
+                <div class="sub-logo">
+                    <h1 class="logo1 lg">INEC </h1>
+                    <h3 class="logo2 lg">Indian National Evangelical Church</h3>
+                </div>
+                
+                <ul class="nav">
+                    <li><a href="#">Home </a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Gallery</a> </li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Log-in</a></li>
+                </ul>
+                
+            </div>
+        </header>
+        <div class="calendar">
+            <div class="sub-calendar">
+                <div>
+                    <button class="cal_but" onclick="prevMonth()">Prev</button>
+                    <select class="cal_select" id="monthSelect" onchange="jumpTo()"></select>
+                    <select class="cal_select" id="yearSelect" onchange="jumpTo()"></select>
+                    <button class="cal_but" onclick="nextMonth()">Next</button>
+                </div>
+                
+                <table id="cal_table">
+                    <thead>
+                        <tr>
+                            <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th>
+                            <th>Thu</th><th>Fri</th><th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendarBody"></tbody>
+                </table>
+            </div>
+            <div class="link-bar">
+                <a onclick="filterType='none'; generateCalendar(currentMonth, currentYear);">Clear</a>
+                <a onclick="filterType='event'; generateCalendar(currentMonth, currentYear);">Events</a>
+                <a onclick="filterType='meeting'; generateCalendar(currentMonth, currentYear);">Meetings</a>
+                <a onclick="filterType='all'; generateCalendar(currentMonth, currentYear);">Show All</a>
+            </div>
+        </div>
+        
+        <footer>@INEC 2025</footer>
+        <script src="header.js"></script>
+    </body>
+</html>
