@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Family Details</title>
+        <link rel="stylesheet" href="FamDet.css">
+        <link rel="stylesheet" href="header.css">
+        
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo"> 
+                <div class="sub-logo">
+                    <h1 class="logo1 lg">INEC </h1>
+                    <h3 class="logo2 lg">Indian National Evangelical Church</h3>
+                </div>
+                <ul class="nav">
+                    <li><a href="#">Home </a> </li>
+                    <li><a href="#">About Us</a> </li>
+                    <li><a href="#">Gallery</a> </li>
+                    <li><a href="#">Contact Us</a> </li>
+                    <li><a href="#">Log-in</a> </li>
+                </ul>
+            </div>
+        </header>
+        
+        
+        <form action="" method="post" id="famform">
+            <div class="headline">
+                <h3>Family Information</h3>
+            </div>
+            <div class="form-inputs">
+                
+                <label for="marstat">Married</label>
+                <input type="radio" name="marstat" id="married" value="Married"  onclick="show()">
+                <label for="married">Yes</label>
+                <input type="radio" name="marstat" id="unmarried" value="unmarried" onclick="hide()">
+                <label for="unmarried">No</label>
+                
+                <div id="more">
+                    <div class="form-fam">
+                    <div class="form-inputs">
+                        <label for="dom">Date of Marriage</label>
+                        <input type="date" name="dom" id="dom" class="forminputs" >
+                    </div>
+                    
+                    <div class="form-inputs">
+                        <label for="spouse_name">Spouse Name</label>
+                        <input type="text" name="spouse_name" id="spouse_name" class="forminputs">
+                    </div>
+                    
+                    <div class="form-inputs">
+                        <label for="sp_dob">Date of Birth</label>
+                        <input type="date" name="sp_dob" id="sp_dob" class="forminputs">
+                    </div>
+                    </div>
+                    <div class="headline">
+                        <h3>Children Information</h3>
+                    </div>
+                    <div class="tab">
+                    <table id="ftab">
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Name</th>
+                                <th>Date of Birth</th>
+                                <th>Gender</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    </div>
+                    <input type="button" onclick="addRow()" value="Add" class="tab-button">
+                    <!-- <button onclick="addRow() " > Add</button> -->
+                    
+                    <div class="profile">
+                        <label class="picture" for="picture__input" tabIndex="0">
+                            <span class="picture__image"></span>
+                        </label>
+                        <input type="file" accept="image/*" name="picture__input" id="picture__input">
+                    </div>
+                </div>
+                <div class="next">
+                <p><a href="#" class="svnxt">Save & Next</a></p>
+                </div>
+            </div>
+        </form>
+        <script src="FamDet.js"></script>
+        <script src="ChildDet.js"></script>
+        <script src="samp.js"></script>
+    </body>
+</html>

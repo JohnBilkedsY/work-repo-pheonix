@@ -1,0 +1,60 @@
+
+#more{
+    display: none;
+}
+#ftab,th,td{
+    border: 2px solid brown;
+    border-collapse: collapse;
+}
+
+
+#ftab th{
+    width: 100px;
+}
+
+/* #ftab, th,td{   
+    display: flex;
+} */
+.tabinputs,.tab-button{
+    width: 100px;
+    height: 100%;
+    border:none;
+}
+#famform{
+    border-radius: 8px;
+    padding: 8px;
+    background-color:white;
+    box-shadow: 2px 2px 1px  black;
+    width:80%;
+    margin:Auto;
+}
+
+.headline{
+    text-align: center;
+}
+.forminputs{
+    width:200px;
+    height: 20px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+.next {
+  display: flex;
+  justify-content: right;
+}
+.svnxt{
+  padding:5px;
+  color:white;
+  background: blue;
+  border-radius: 2px;
+}
+
+
+label{
+margin-top:8px;
+font-weight:bold;
+color:blue;
+}
+

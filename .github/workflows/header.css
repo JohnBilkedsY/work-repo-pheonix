@@ -43,24 +43,24 @@ header{
     display: block;
   }
   .logo1{
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
   }
   
   .logo2{
-    font-size: 14px;
+    font-size: 8px;
     text-align: center;
   }
   .nav a{
     font-size: 12px;
-    padding:0px;
+    padding:2px;
   }
   
   .lg{
     margin:0px;
   }
   .nav li{
-    margin:0px;
+    margin:auto;
   }
 }
 
@@ -70,16 +70,16 @@ header{
     display: block;
   }
   .logo1{
-    font-size: 26px;
+    font-size: 22px;
     text-align: center;
   }
   
   .logo2{
-    font-size: 18px;
+    font-size: 10px;
     text-align: center;
   }
   .nav a{
-    font-size: 22px;
+    font-size: 14px;
     padding:6px;
   }
   

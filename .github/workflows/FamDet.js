@@ -1,0 +1,32 @@
+const inputFile = document.querySelector("#picture__input");
+const pictureImage = document.querySelector(".picture__image");
+const pictureImageTxt = "Choose an image";
+pictureImage.innerHTML = pictureImageTxt;
+
+inputFile.addEventListener("change", function (e) {
+    const inputTarget = e.target;
+    const file = inputTarget.files[0];
+    if(this.files[0].size > 3145728) {
+        alert("File is too big! Upload below 3mb");
+        this.value = "";
+    }
+    
+    else if(file) {
+        const reader = new FileReader();
+        
+        reader.addEventListener("load", function (e) {
+            const readerTarget = e.target;
+            
+            const img = document.createElement("img");
+            img.src = readerTarget.result;
+            img.classList.add("picture__img");
+            
+            pictureImage.innerHTML = "";
+            pictureImage.appendChild(img);
+        });
+        reader.readAsDataURL(file);
+    } else {
+        pictureImage.innerHTML = pictureImageTxt;
+    }
+    
+});
