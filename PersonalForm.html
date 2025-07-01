@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INEC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="Proimg.css">
+    </head>
+    <body >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">INEC</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                       
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Log-in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h3 class="text-center">Personal Details</h3>
+            
+            
+            <form class="row g-3">
+                <div class="col-md-2 justify-content-center">
+                    <div class="profile">
+                        <label class="picture" for="picture__input" tabIndex="0">
+                            <span class="picture__image"></span>
+                        </label>
+                        <input type="file" accept="image/*" name="picture__input" id="picture__input">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="eg John Doe">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputResp" class="form-label">Responsibility</label>
+                    <select  id="inputResp" class="form-select" required>
+                        <option value="-1" hidden>-- select --</option>
+                        <option value="Pas">Pastor</option>
+                        <option value="As">Assistant Pastor</option>
+                        <option value="stco">State Co-ordinator</option>
+                        <option value="disco">District Co-ordinator</option>
+                        <option value="arco">Area Co-ordinator</option>
+                        <option value="biblewoman">Bible Woman</option>
+                        <option value="layworker">Lay Leader</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputGender" class="form-label">Gender</label>
+                    <select id="inputGender" class="form-select" required>
+                        <option value="-1" hidden>-- select --</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                        <option value="O">Others</option>
+                    </select>
+                </div>
+    
+                <div class="col-md-4">
+                    <label for="inputDoB" class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control" id="inputDob">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputBlood" class="form-label">Blood Group</label>
+                    <input type="text" class="form-control" id="inputDob">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputDoj" class="form-label">Date of Joining INEC</label>
+                    <input type="date" class="form-control" id="inputDoj" >
+                </div>
+                <div class="col-md-4">
+                    <label for="inputMinExp" class="form-label">Ministry Experience</label>
+                    <input type="text" class="form-control" id="inputMinExp" >
+                </div>
+                <div class="col-md-4">
+                    <label for="inputAadhaar" class="form-label">Aadhaar Number</label>
+                    <input type="text" class="form-control" id="inputAadhaar" >
+                </div>
+                <div class="col-md-4">
+                    <label for="inputLang" class="form-label">Languages Known</label>
+                    <input type="text" class="form-control" id="inputLang" placeholder="eg English">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputBivoc" class="form-label">Biovocational</label>
+                    <select id="inputBivoc" class="form-select">
+                        <option value="-1" hidden>-- select --</option>
+                        <option value="Y">Yes</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" >
+                </div>
+                <div class="col-md-4">
+                    <label for="inputPhone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="inputPhone1">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputPhone" class="form-label">Alternate Phone</label>
+                    <input type="tel" class="form-control" id="inputPhone1">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputLandline" class="form-label">LandLine</label>
+                    <input type="tel" class="form-control" id="inputLandline" placeholder="eg +044 38923392">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputAddress" class="form-label">Address 1</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="eg 1234 Main St">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputAddress2" class="form-label">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="eg Apartment, studio, or floor">
+                </div>
+                
+                <div class="col-md-4">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="City / Province / Region">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputDist" class="form-label">District</label>
+                    <input type="text" class="form-control" id="inputDist">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <input type="text" class="form-control" id="inputState">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputNation" class="form-label">Nationality</label>
+                    <input type="text"  id="inputNation" class="form-control">
+                </div>
+
+                <div class="col-md-2">
+                    <label for="inputPincode" class="form-label">Pincode</label>
+                    <input type="text" class="form-control" id="inputPincode">
+                </div>
+
+                <!-- Button alignment -->
+                <div class="col-12 d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary">Save & Next</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script src="Proimg.js"></script>
+    </body> 
+</html>
